@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Fehler, Ideen und Fragen zu den Spielen von Diyato Studios.">
+<title>Diyato Studios – Feedback und Kontakt</title>
+<link rel="stylesheet" href="css/stil.css">
+<script src="js/formular.js" defer></script>
+</head>
+<body>
+<div class="seite">
+
+<header class="kopf">
+<a class="kopf__logo" href="index.html"><img src="bilder/diyato-logo-klein.webp" alt="Diyato Studios" width="360" height="155"></a>
+<nav class="menue" aria-label="Hauptmenü">
+<a href="spiele.html">Spiele</a>
+<a href="index.html#studio">Studio</a>
+<a href="feedback.html" aria-current="page">Feedback</a>
+</nav>
+</header>
+
+<main class="feedback">
+
+<!-- Das Formular sendet noch nichts (js/formular.js zeigt nur einen Hinweis). -->
+<form id="formular" class="formular" data-bald novalidate>
+<div>
+<h1 class="titel">Feedback</h1>
+<p class="formular__unterzeile">Fehler, Ideen und Fragen zu den Spielen.</p>
+</div>
+
+<div class="feld">
+<label for="spiel">Spiel</label>
+<select id="spiel" name="spiel">
+<option>Kiezkrieg</option>
+<option>Squishy World</option>
+<option>Allgemein</option>
+</select>
+</div>
+
+<fieldset class="feld-gruppe">
+<legend>Worum geht es?</legend>
+<div class="auswahl">
+<label><input type="radio" name="art" value="fehler" checked>Fehler</label>
+<label><input type="radio" name="art" value="idee">Idee</label>
+<label><input type="radio" name="art" value="sonstiges">Sonstiges</label>
+</div>
+</fieldset>
+
+<div class="feld-reihe">
+<div class="feld">
+<label for="mail">Deine E-Mail</label>
+<input id="mail" name="email" type="email" autocomplete="email">
+</div>
+<div class="feld">
+<label for="name">Spielername <span class="feld__freiwillig">(freiwillig)</span></label>
+<input id="name" name="name" type="text">
+</div>
+</div>
+
+<div class="feld">
+<label for="text">Nachricht</label>
+<textarea id="text" name="text" rows="7"></textarea>
+</div>
+
+<div class="senden">
+<button type="submit">Senden</button>
+<span class="senden__hinweis">Was mit deinen Angaben passiert: <a href="datenschutz.html#kontaktformular">Datenschutz</a></span>
+</div>
+<p class="meldung" role="status" aria-live="polite" hidden>Das Formular ist bald verfügbar. Schreib bis dahin gern eine E-Mail an <a href="mailto:diyatostudios@gmail.com">diyatostudios@gmail.com</a>.</p>
+</form>
+
+<aside id="kontakt" class="kontakt">
+<h2 class="titel">Kontakt</h2>
+<div>
+<div class="kontakt__etikett">E-Mail</div>
+<a class="kontakt__mail" href="mailto:diyatostudios@gmail.com">diyatostudios@gmail.com</a>
+</div>
+<div>
+<div class="kontakt__etikett">Anschrift</div>
+<div>Tolga Durmus, handelnd als Diyato Studios<br>Kirchlinden 7<br>22111 Hamburg</div>
+</div>
+<a href="impressum.html">Zum Impressum</a>
+</aside>
+
+</main>
+
+<footer class="fuss fuss--eng">
+<div>© 2026 Diyato Studios</div>
+<nav aria-label="Rechtliches">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+</footer>
+
+</div>
+</body>
+</html>

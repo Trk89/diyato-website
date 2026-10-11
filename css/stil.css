@@ -1,0 +1,219 @@
+/* Diyato Studios – gemeinsames Aussehen aller Seiten (Vorlage vom 11. Oktober 2026). */
+
+/* Schriften liegen lokal in /schriften (SIL Open Font License), nichts kommt von fremden Servern. */
+@font-face { font-family: 'Figtree'; font-style: normal; font-weight: 400; font-display: swap; src: url('../schriften/figtree-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Figtree'; font-style: normal; font-weight: 500; font-display: swap; src: url('../schriften/figtree-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Figtree'; font-style: normal; font-weight: 600; font-display: swap; src: url('../schriften/figtree-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('../schriften/bricolage-grotesque-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 700; font-display: swap; src: url('../schriften/bricolage-grotesque-latin-700-normal.woff2') format('woff2'); }
+
+:root {
+  --hintergrund: #F5F6F8;
+  --text: #15171C;
+  --text-leise: #5A6170;
+  --text-mittel: #3A3F4A;
+  --rand: #DDE0E6;
+  --rand-stark: #8A90A0;
+  --weiss: #FFFFFF;
+  --link: #2B2FD6;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--hintergrund);
+  color: var(--text);
+  font-family: 'Figtree', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a { color: var(--link); }
+a:hover { color: var(--text); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+img { display: block; height: auto; max-width: 100%; }
+
+.titel { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; }
+
+.seite { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+/* Kopfzeile */
+.kopf { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 0; }
+.kopf--mitte { justify-content: center; }
+.kopf__logo { display: inline-flex; align-items: center; text-decoration: none; }
+.kopf__logo img { height: 72px; width: auto; }
+.menue { display: flex; flex-wrap: wrap; gap: 4px; }
+.menue a { padding: 12px 16px; color: var(--text); text-decoration: none; font-weight: 500; }
+.menue a[aria-current] { text-decoration: underline; text-underline-offset: 6px; font-weight: 600; }
+
+/* Knöpfe */
+.knopf {
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 52px; padding: 0 28px;
+  border-radius: 999px; font-weight: 600; text-decoration: none;
+}
+.knopf--dunkel { background: var(--text); color: var(--weiss); }
+.knopf--dunkel:hover { color: var(--weiss); background: #2A2D35; }
+.knopf--rand { border: 1px solid var(--rand-stark); color: var(--text); }
+.knopf--rand:hover { border-color: var(--text); }
+.knopf--klein { min-height: 48px; padding: 0 24px; }
+
+/* Startseite: großes Logo */
+.held { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 88px; }
+.held__logo { width: 600px; }
+.held h1 { margin: 40px 0 0; font-size: 56px; line-height: 1.05; letter-spacing: -0.02em; }
+.held p { margin: 16px 0 0; max-width: 600px; font-size: 21px; color: var(--text-leise); }
+.held__knoepfe { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 36px; }
+
+.abschnitt-kopf { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+.abschnitt-kopf h2 { margin: 0; font-size: 40px; letter-spacing: -0.01em; }
+.abschnitt-kopf a { font-weight: 600; }
+
+/* Spielkarten */
+.karten { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px; }
+.karte { display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; }
+.karte__bild { margin: 20px 20px 0; }
+.karte__bild img { width: 260px; aspect-ratio: 1 / 1; margin: 0 auto; }
+.karte__inhalt { display: flex; flex-direction: column; gap: 14px; padding: 28px 32px 32px; }
+.karte h3 { margin: 0; font-size: 44px; line-height: 1; }
+.karte p { margin: 0; }
+.karte__aktionen { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 8px; }
+
+.marken { display: flex; flex-wrap: wrap; gap: 8px; }
+.marke { padding: 2px 12px; border: 1px solid; border-radius: 999px; font-size: 15px; }
+
+/* Farben je Spiel */
+.kiezkrieg { background: #090B10; color: #F2F4F8; }
+.kiezkrieg .marke { border-color: #39415A; color: #C9D0DD; }
+.kiezkrieg .spielname { color: #6BFF5C; }
+.kiezkrieg p { color: #C9D0DD; }
+.kiezkrieg a { color: #F2F4F8; }
+.kiezkrieg .icon { border-radius: 22%; }
+.kiezkrieg .knopf--spiel { background: #6BFF5C; color: #06110A; }
+.kiezkrieg .spiel-links { border-top-color: #222838; }
+.kiezkrieg .spiel-links a { color: #C9D0DD; }
+.kiezkrieg .spiel-links a:hover { color: #F2F4F8; }
+
+.squishy { background: #F9CFE4; color: #15171C; }
+.squishy .marke { border-color: #8C4A72; color: #4A1F3A; }
+.squishy p { color: #4A1F3A; }
+.squishy .icon { border-radius: 28px; }
+.squishy .knopf--spiel { border: 1px solid #8C4A72; color: #4A1F3A; }
+.squishy .spiel-links { border-top-color: #E3A6C8; }
+.squishy .spiel-links a { color: #15171C; }
+.squishy .spiel-links a:hover { color: #8C4A72; }
+
+/* Studio */
+.studio { display: flex; flex-wrap: wrap; gap: 24px 64px; padding: 96px 0 0; }
+.studio h2 { flex: 0 0 280px; margin: 0; font-size: 40px; letter-spacing: -0.01em; }
+.studio__text { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px; font-size: 20px; color: var(--text-mittel); }
+.studio__text p { margin: 0; }
+
+.hinweis {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;
+  margin-top: 96px; padding: 40px 48px;
+  background: var(--weiss); border: 1px solid var(--rand); border-radius: 24px;
+}
+.hinweis h2 { margin: 0; font-size: 32px; line-height: 1.1; }
+.hinweis p { margin: 8px 0 0; color: var(--text-leise); }
+
+/* Seite „Spiele“ */
+.seitentitel { padding: 64px 0 48px; }
+.seitentitel h1 { margin: 0; font-size: 72px; line-height: 1; letter-spacing: -0.02em; }
+.spiele-liste { display: flex; flex-direction: column; gap: 24px; }
+.spiel { display: flex; flex-wrap: wrap; border-radius: 24px; overflow: hidden; }
+.spiel__bild { flex: 1 1 340px; min-width: 0; padding: 20px; }
+.spiel__bild img { width: 300px; aspect-ratio: 1 / 1; margin: 0 auto; }
+.squishy .spiel__bild img { border-radius: 32px; }
+.spiel__inhalt { flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 36px 40px 36px 20px; }
+.spiel h2 { margin: 0; font-size: 52px; line-height: 1; }
+.spiel p { margin: 0; }
+.spiel__knopf { margin-top: 8px; }
+.spiel-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; padding-top: 16px; border-top: 1px solid; font-size: 16px; }
+
+/* Feedback */
+.feedback { display: flex; flex-wrap: wrap; gap: 64px; padding: 64px 0 72px; }
+.formular { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
+.formular h1 { margin: 0; font-size: 72px; line-height: 1; letter-spacing: -0.02em; }
+.formular__unterzeile { margin: 12px 0 0; color: var(--text-leise); }
+.feld { display: flex; flex-direction: column; gap: 8px; }
+.feld label, .feld-gruppe legend { font-weight: 600; }
+.feld__freiwillig { font-weight: 400; color: var(--text-leise); }
+.feld input, .feld select, .feld textarea {
+  background: var(--weiss); border: 1px solid var(--rand-stark); border-radius: 12px;
+  color: var(--text); font: inherit;
+}
+.feld input, .feld select { height: 52px; padding: 0 16px; }
+.feld textarea { padding: 14px 16px; resize: vertical; }
+.feld-reihe { display: flex; flex-wrap: wrap; gap: 20px; }
+.feld-reihe .feld { flex: 1 1 240px; }
+.feld-gruppe { margin: 0; padding: 0; border: 0; min-width: 0; }
+.feld-gruppe legend { padding: 0; margin-bottom: 10px; }
+.auswahl { display: flex; flex-wrap: wrap; gap: 12px; }
+.auswahl label {
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 48px; padding: 0 20px;
+  background: var(--weiss); border: 1px solid var(--rand-stark); border-radius: 999px;
+  font-weight: 500; cursor: pointer;
+}
+.auswahl input { accent-color: var(--text); width: 18px; height: 18px; margin: 0; }
+.auswahl label:has(input:checked) { background: var(--text); border-color: var(--text); color: var(--weiss); font-weight: 600; }
+.auswahl label:has(input:checked) input { accent-color: var(--weiss); }
+.auswahl label:has(input:focus-visible) { outline: 2px solid var(--link); outline-offset: 2px; }
+.senden { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.senden button {
+  min-height: 52px; padding: 0 36px;
+  background: var(--text); color: var(--weiss); border: 0; border-radius: 999px;
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.senden button:hover { background: #2A2D35; }
+.senden__hinweis { font-size: 16px; color: var(--text-leise); }
+.meldung {
+  margin: 0; padding: 16px 20px;
+  background: var(--weiss); border: 1px solid var(--rand); border-left: 4px solid var(--text); border-radius: 12px;
+}
+.meldung[hidden] { display: none; }
+.meldung a { font-weight: 600; overflow-wrap: anywhere; }
+
+.kontakt {
+  flex: 1 1 280px; align-self: flex-start;
+  display: flex; flex-direction: column; gap: 20px;
+  padding: 32px; background: var(--weiss); border: 1px solid var(--rand); border-radius: 24px;
+}
+.kontakt h2 { margin: 0; font-size: 28px; }
+.kontakt__etikett { font-size: 15px; color: var(--text-leise); }
+.kontakt__mail { font-weight: 600; overflow-wrap: anywhere; }
+
+/* Rechtliche Seiten (Impressum, Datenschutz, Konto löschen) */
+.recht { max-width: 760px; padding: 64px 0 24px; }
+.recht h1 { margin: 0; font-size: 56px; line-height: 1.05; letter-spacing: -0.02em; overflow-wrap: break-word; hyphens: manual; }
+.recht__unterzeile { margin: 12px 0 0; color: var(--text-leise); }
+.recht h2 {
+  margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--rand);
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.2;
+  overflow-wrap: break-word; hyphens: manual;
+}
+.recht p, .recht ul, .recht ol { margin: 0 0 14px; color: var(--text-mittel); }
+.recht ul, .recht ol { padding-left: 24px; }
+.recht li { margin-bottom: 8px; }
+.recht strong { color: var(--text); }
+.recht a { overflow-wrap: anywhere; }
+.kasten { margin: 0 0 14px; padding: 20px 24px; background: var(--weiss); border: 1px solid var(--rand); border-radius: 16px; }
+.kasten p:last-child { margin-bottom: 0; }
+.recht .formular { gap: 20px; }
+.recht__fuss { margin-top: 32px; }
+
+/* Fußzeile */
+.fuss {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px;
+  margin-top: 72px; padding: 32px 0 48px;
+  border-top: 1px solid var(--rand); font-size: 16px; color: var(--text-leise);
+}
+.fuss--eng { margin-top: 0; }
+.fuss nav { display: flex; flex-wrap: wrap; gap: 24px; }
+.karte__mehr { font-weight: 600; }
