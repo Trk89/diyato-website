@@ -8,6 +8,7 @@ Statische Seite ohne Framework, gebaut am 11. Oktober 2026 aus dem abgesegneten 
 - `impressum.html`: Text aus Kiezkrieg (`public/impressum.html`), ohne das Kontaktformular
 - `datenschutz.html`: oben eigener Teil „Diese Website“, darunter „Kiezkrieg“ mit der Erklärung unverändert aus Kiezkrieg
 - `konto-loeschen.html`: Text unverändert aus Kiezkrieg
+- `kiezkrieg/agb.html`: Nutzungsbedingungen für Kiezkrieg, Text unverändert aus Kiezkrieg (`public/nutzungsbedingungen.html`), Adresse /kiezkrieg/agb, Pfade relativ mit `../`
 - `squishy-world/datenschutz.html`: Datenschutzerklärung für Squishy World (Adresse /squishy-world/datenschutz, Pfade relativ mit `../`)
 - `404.html`: Seite nicht gefunden (absolute Pfade, weil GitHub Pages sie bei jeder unbekannten Adresse zeigt)
 - `favicon.ico`, `apple-touch-icon.png`, `bilder/favicon-192.png`: Favicon aus dem „D“ des Logos
