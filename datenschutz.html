@@ -57,7 +57,7 @@ wie die Seite; Inhalte von anderen Servern werden nicht geladen.</p>
 Sie gelten auch für diese Website.</p>
 
 <h2 id="kiezkrieg" class="teil titel">Kiezkrieg</h2>
-<p class="recht__unterzeile">Kiezkrieg (App und Browser-Version) · Stand: 15. Oktober 2026</p>
+<p class="recht__unterzeile">Kiezkrieg (App und Browser-Version) · Stand: 16. Oktober 2026</p>
 
 <p>Kiezkrieg ist ein Multiplayer-Spiel für Erwachsene. Hier steht, welche Daten das Spiel verarbeitet, wozu, wo sie liegen,
 wie lange ich sie aufbewahre und welche Rechte du hast. Ich zeige keine Werbung, nutze keine Analyse- oder Tracking-Dienste
@@ -88,7 +88,7 @@ E-Mail: <a href="mailto:diyatostudios@gmail.com">diyatostudios@gmail.com</a></p>
   <li><strong>Wohnadresse im Spiel:</strong> Das Spiel weist dir zufällig einen echten Straßennamen ohne Hausnummer zu. Das ist <em>nicht</em> dein echter Wohnort. Ich frage deinen Standort nicht ab und nutze kein GPS.</li>
   <li><strong>Für andere Spieler sichtbar:</strong> Spielername, Profilbild, Straßenrang, Crew, Platzierungen in Ranglisten und die Lage deiner Spiel-Wohnung auf der Spielkarte. Nicht sichtbar sind deine Werte, dein Geld und wo du gerade bist.</li>
   <li><strong>Wozu und Rechtsgrundlage:</strong> damit das Spiel funktioniert (Art. 6 Abs. 1 lit. b DSGVO). Alle Spielregeln rechnet der Server; deshalb liegt der Spielstand dort.</li>
-  <li><strong>Keine automatisierte Entscheidung:</strong> Es gibt keine automatisierte Entscheidungsfindung und kein Profiling im Sinne von Art. 22 DSGVO. Der Server rechnet nur die Spielregeln, die für alle gleich gelten.</li>
+  <li><strong>Keine automatisierte Entscheidung:</strong> Es gibt keine automatisierte Entscheidungsfindung und kein Profiling im Sinne von Art. 22 DSGVO. Der Server rechnet nur die Spielregeln, die für alle gleich gelten. Zur Erkennung von Bots siehe Abschnitt 6a; auch dort entscheide ich selbst.</li>
 </ul>
 
 <h3>3a. Premium und Probewoche</h3>
@@ -121,6 +121,14 @@ E-Mail: <a href="mailto:diyatostudios@gmail.com">diyatostudios@gmail.com</a></p>
   <li><strong>Blockieren:</strong> Ich speichere, wen du blockiert hast, damit du dessen Nachrichten nicht mehr bekommst. Der Blockierte erfährt davon nichts.</li>
   <li><strong>Sperren:</strong> Verstößt jemand gegen die Regeln, kann ich ihn vom Chat sperren; gespeichert werden Grund, Dauer und Zeitpunkt.</li>
   <li><strong>Rechtsgrundlage:</strong> mein berechtigtes Interesse an einem sicheren Miteinander und die Vorgaben der App-Stores für Chats (Art. 6 Abs. 1 lit. f DSGVO).</li>
+</ul>
+
+<h3>6a. Schutz vor Bots und Missbrauch</h3>
+<ul>
+  <li><strong>Was:</strong> Der Server zählt, wie oft dein Konto ihn aufruft (je Stunde, getrennt nach Art des Aufrufs, ohne Inhalte). Bei jeder Anmeldung speichert der Anmeldedienst (Supabase) Zeitpunkt, IP-Adresse und Programmkennung, also mit welcher App oder welchem Browser du dich angemeldet hast. Diese Angaben werte ich stündlich automatisch aus, um Bots und Skripte zu erkennen: viele Anmeldungen kurz hintereinander, ein Programm statt der App, sehr gleichmäßige Abstände, Aktivität rund um die Uhr und ob mehrere Konten denselben Anschluss nutzen.</li>
+  <li><strong>Wozu:</strong> damit das Spiel für alle fair bleibt und der Server nicht überlastet wird.</li>
+  <li><strong>Keine automatische Entscheidung:</strong> Die Auswertung ergibt nur eine Liste für mich, ohne IP-Adressen. Ob ein Konto gesperrt wird, entscheide ich selbst. Eine Spielsperre (24 Stunden oder dauerhaft) speichere ich mit Grund, Dauer, Zeitpunkt und wer gesperrt hat.</li>
+  <li><strong>Rechtsgrundlage:</strong> mein berechtigtes Interesse an einem fairen Spiel und einem sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</li>
 </ul>
 
 <h3>7. Push-Benachrichtigungen (Android)</h3>
@@ -182,6 +190,10 @@ nötig, damit die App so funktioniert, wie du es willst; er braucht deshalb kein
   <li><strong>Zeitpunkt der Trainings-Meldung:</strong> bis das Spiel das Training nach dem Ende abgerechnet hat (beim nächsten Spielzug oder Öffnen der App) oder bis du es abbrichst; mit dem Charakter oder dem Konto wird er sofort gelöscht.</li>
   <li><strong>Premium:</strong> Status und Ablaufdatum bis zum Löschen des Kontos.</li>
   <li><strong>Code bei „Passwort vergessen“:</strong> verfällt nach kurzer Zeit oder sobald er benutzt ist. Die Versanddaten bei Brevo löscht Brevo nach seinen Fristen für Versandprotokolle.</li>
+  <li><strong>Zahl der Aufrufe:</strong> 7 Tage (siehe Abschnitt 6a).</li>
+  <li><strong>Anmeldungen (Zeitpunkt, IP-Adresse, Programmkennung):</strong> solange die Anmeldung besteht, spätestens bis zum Löschen des Kontos. Ausgewertet werden nur die letzten 7 Tage.</li>
+  <li><strong>Liste „Verdächtig“:</strong> Ein Eintrag verschwindet beim nächsten stündlichen Lauf, sobald nichts mehr auffällt, spätestens mit dem Löschen des Kontos.</li>
+  <li><strong>Spielsperren:</strong> solange sie gelten. Nach dem Ablauf einer 24-Stunden-Sperre oder nach dem Aufheben einer Sperre bleibt sie 6 Monate als Vermerk und wird dann automatisch gelöscht. Eine dauerhafte Sperre bleibt bis zum Aufheben. Mit dem Löschen des Kontos verschwindet alles sofort.</li>
 </ul>
 
 <h3>11. Konto löschen</h3>
