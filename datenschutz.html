@@ -57,7 +57,7 @@ wie die Seite; Inhalte von anderen Servern werden nicht geladen.</p>
 Sie gelten auch für diese Website.</p>
 
 <h2 id="kiezkrieg" class="teil titel">Kiezkrieg</h2>
-<p class="recht__unterzeile">Kiezkrieg (App und Browser-Version) · Stand: 28. Oktober 2026</p>
+<p class="recht__unterzeile">Kiezkrieg (App und Browser-Version) · Stand: 29. Oktober 2026</p>
 
 <p>Kiezkrieg ist ein Multiplayer-Spiel für Spieler ab 16 Jahren. Hier steht, welche Daten das Spiel verarbeitet, wozu, wo sie liegen,
 wie lange ich sie aufbewahre und welche Rechte du hast. Ich zeige keine Werbung, nutze keine Analyse- oder Tracking-Dienste
@@ -134,6 +134,7 @@ E-Mail: <a href="mailto:diyatostudios@gmail.com">diyatostudios@gmail.com</a></p>
 <ul>
   <li><strong>Was:</strong> Der Server zählt, wie oft dein Konto ihn aufruft (je Stunde, getrennt nach Art des Aufrufs, ohne Inhalte). Bei jeder Anmeldung speichert der Anmeldedienst (Supabase) Zeitpunkt, IP-Adresse und Programmkennung, also mit welcher App oder welchem Browser du dich angemeldet hast. Gezählt wird auch, wie oft der Server Aufrufe ablehnt, weil zu viele in kurzer Zeit kamen. Diese Angaben werte ich alle 10 Minuten automatisch aus, um Bots, Skripte und Klicker zu erkennen: viele Anmeldungen kurz hintereinander, ein Programm statt der App, sehr gleichmäßige Abstände, Starts immer auf derselben Sekunde, viele neue Geräte-Kennungen, Aktivität rund um die Uhr und ob mehrere Konten denselben Anschluss nutzen.</li>
   <li><strong>Zeitpunkte von Starts:</strong> Wenn du eine Deal-Runde, ein Training oder eine Schicht startest, pflanzt oder erntest, speichert der Server die Art und den genauen Zeitpunkt des Starts (ohne weitere Inhalte). Daran erkenne ich Skripte und Klicker, die Aktionen in einem festen Takt starten. Die Zeitpunkte werden nach 7 Tagen automatisch gelöscht.</li>
+  <li><strong>Tresor beim Plündern:</strong> Wenn du beim Plündern eines Hauptquartiers den Tresor knackst, speichert der Server je Versuch die Tresor-Stufe, ob er aufging, wie viele Tipps, Treffer und Fehlgriffe es waren, wie nah die Treffer im Mittel an der Mitte der Zone lagen und wie gleichmäßig deine Tipps beim Server ankamen (ohne weitere Inhalte). Daran erkenne ich Skripte, die den Tresor automatisch knacken. Die Angaben werden nach 7 Tagen automatisch gelöscht.</li>
   <li><strong>Gleicher Anschluss:</strong> Alle 5 Minuten prüft der Server, ob zwei Konten in den letzten 7 Tagen über dieselbe IP-Adresse angemeldet waren. Dann speichere ich nur das Paar der beiden Konten mit Zeitpunkten, nie die IP-Adresse, und bekomme eine Benachrichtigung. Das kann auch einfach dasselbe WLAN sein; ich prüfe selbst und entscheide nichts automatisch.</li>
   <li><strong>Geräte-Kennung:</strong> Die App erzeugt bei der Installation eine zufällige Kennung (keine Hardware-Kennung, keine Werbe-ID). Der Server merkt sie sich je Konto, damit niemand ein Kopfgeld über ein Zweitkonto am selben Gerät kassiert und niemand sich selbst über ein Zweitkonto zu einer Einladungsbelohnung verhilft (dann gibt es keine). Außerdem werte ich aus, wie viele neue Kennungen ein Konto an einem Tag benutzt (Skripte erzeugen oft ständig neue).</li>
   <li><strong>Einladungen und gleicher Anschluss:</strong> Bei einer Einladung prüft der Server außerdem, ob beide Konten in den letzten 7 Tagen über dieselbe IP-Adresse angemeldet waren. Dabei wird keine IP-Adresse zusätzlich gespeichert; gespeichert wird nur, dass es so war. Dann halte ich die Belohnung zurück und entscheide selbst, ob ich sie freigebe.</li>
@@ -206,6 +207,7 @@ nötig, damit die App so funktioniert, wie du es willst; er braucht deshalb kein
   <li><strong>Code zum Bestätigen der E-Mail und bei „Passwort vergessen“:</strong> verfällt nach kurzer Zeit oder sobald er benutzt ist. Die Versanddaten bei Brevo löscht Brevo nach seinen Fristen für Versandprotokolle.</li>
   <li><strong>Zahl der Aufrufe:</strong> 7 Tage (siehe Abschnitt 6a).</li>
   <li><strong>Zeitpunkte von Starts:</strong> 7 Tage (siehe Abschnitt 6a), mit dem Konto sofort.</li>
+  <li><strong>Tresor beim Plündern:</strong> 7 Tage (siehe Abschnitt 6a), mit dem Konto sofort.</li>
   <li><strong>Anmeldungen (Zeitpunkt, IP-Adresse, Programmkennung):</strong> solange die Anmeldung besteht, spätestens bis zum Löschen des Kontos. Ausgewertet werden nur die letzten 7 Tage.</li>
   <li><strong>Kopfgelder:</strong> 30 Tage, nachdem sie kassiert, abgelaufen oder weggefallen sind. Offene bleiben bis dahin (höchstens 48 Stunden).</li>
   <li><strong>Geräte-Kennung je Konto:</strong> 30 Tage nach der letzten Nutzung, mit dem Konto sofort.</li>
