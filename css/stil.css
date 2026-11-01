@@ -63,6 +63,34 @@ img { display: block; height: auto; max-width: 100%; }
 .knopf--rand:hover { border-color: var(--text); }
 .knopf--klein { min-height: 48px; padding: 0 24px; }
 
+/* Startseite: Kiezkrieg oben (Start 27. November 2026) */
+.start {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px;
+  margin-top: 8px; padding: 32px 36px; border-radius: 24px;
+}
+.start__icon { flex: 0 0 auto; width: 160px; border-radius: 22%; }
+.start__inhalt { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.start__oben { margin: 0; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #C9D0DD; }
+.start h1 { margin: 0; font-size: 44px; line-height: 1.05; letter-spacing: -0.02em; }
+.start p { margin: 0; font-size: 19px; }
+.start__mehr { font-weight: 600; font-size: 16px; }
+.start .spiel-knoepfe { margin-top: 6px; }
+.held--klein { padding: 56px 0 72px; }
+
+/* Knöpfe je Spiel (Google Play und Browser) */
+.spiel-knoepfe { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.spiel-knoepfe .knopf { max-width: 100%; text-align: left; }
+.spiel-knoepfe .knopf svg { flex: 0 0 auto; }
+.marke--start { font-weight: 600; }
+
+/* Squishy World: Tester werden */
+.tester { margin-top: 12px; padding: 20px 24px; background: rgba(255, 255, 255, 0.55); border: 1px solid #E3A6C8; border-radius: 16px; }
+.tester h3 { margin: 0 0 8px; font-size: 26px; line-height: 1.1; }
+.tester__schritte { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.tester__schritte li { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid #E3A6C8; }
+.tester__text { font-size: 17px; }
+.tester .knopf { align-self: flex-start; }
+
 /* Startseite: großes Logo */
 .held { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 88px; }
 .held__logo { width: 600px; }
@@ -95,6 +123,10 @@ img { display: block; height: auto; max-width: 100%; }
 .kiezkrieg a { color: #F2F4F8; }
 .kiezkrieg .icon { border-radius: 22%; }
 .kiezkrieg .knopf--spiel { background: #6BFF5C; color: #06110A; }
+.kiezkrieg .knopf--spiel:hover { color: #06110A; background: #86FF79; }
+.kiezkrieg .knopf--hell { border: 1px solid #6BFF5C; color: #F2F4F8; }
+.kiezkrieg .knopf--hell:hover { color: #06110A; background: #6BFF5C; }
+.kiezkrieg .marke--start { border-color: #6BFF5C; color: #6BFF5C; }
 .kiezkrieg .spiel-links { border-top-color: #222838; }
 .kiezkrieg .spiel-links a { color: #C9D0DD; }
 .kiezkrieg .spiel-links a:hover { color: #F2F4F8; }
@@ -103,7 +135,8 @@ img { display: block; height: auto; max-width: 100%; }
 .squishy .marke { border-color: #8C4A72; color: #4A1F3A; }
 .squishy p { color: #4A1F3A; }
 .squishy .icon { border-radius: 28px; }
-.squishy .knopf--spiel { border: 1px solid #8C4A72; color: #4A1F3A; }
+.squishy .knopf--spiel { background: #4A1F3A; color: #FFFFFF; }
+.squishy .knopf--spiel:hover { color: #FFFFFF; background: #6A2F53; }
 .squishy .spiel-links { border-top-color: #E3A6C8; }
 .squishy .spiel-links a { color: #15171C; }
 .squishy .spiel-links a:hover { color: #8C4A72; }
@@ -224,3 +257,21 @@ img { display: block; height: auto; max-width: 100%; }
 
 /* Seite nicht gefunden (404.html) */
 .nicht-gefunden__knoepfe { justify-content: flex-start; margin: 36px 0 0; }
+
+/* Handy: Knöpfe untereinander und volle Breite */
+@media (max-width: 640px) {
+  .seite { padding: 0 16px; }
+  .start { padding: 24px 20px; gap: 20px; }
+  .start__icon { width: 112px; }
+  .start h1 { font-size: 34px; }
+  .start p { font-size: 17px; }
+  .held h1 { font-size: 40px; }
+  .seitentitel h1, .formular h1 { font-size: 52px; }
+  .karte h3 { font-size: 36px; }
+  .spiel h2 { font-size: 40px; }
+  .karte__inhalt { padding: 24px 20px 24px; }
+  .spiel__inhalt { padding: 8px 20px 28px; }
+  .spiel-knoepfe { flex-direction: column; }
+  .spiel-knoepfe .knopf, .tester .knopf { width: 100%; justify-content: center; text-align: center; padding: 12px 20px; }
+  .hinweis { padding: 28px 24px; }
+}

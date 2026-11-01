@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Diyato Studios ist ein kleines Spielestudio aus Hamburg. Hier findest du alle Spiele und den direkten Draht zum Studio.">
-<title>Diyato Studios – Startseite</title>
+<meta name="description" content="Kiezkrieg startet am 27. November 2026 um 18 Uhr: jetzt bei Google Play vorregistrieren oder im Browser spielen. Diyato Studios, Spiele aus Hamburg.">
+<title>Diyato Studios – Kiezkrieg startet am 27.11.2026</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="bilder/favicon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -24,7 +24,21 @@
 </header>
 
 <main>
-<section id="top" class="held">
+<section id="top" class="start kiezkrieg" aria-labelledby="start-titel">
+<img class="start__icon" src="bilder/kiezkrieg-icon.png" alt="" width="512" height="512">
+<div class="start__inhalt">
+<p class="start__oben">Neues Spiel · Ab 18</p>
+<h1 id="start-titel" class="titel spielname">Kiezkrieg startet<br>Fr 27.11.2026, 18 Uhr</h1>
+<p>Gründe eine Crew und erobere Viertel auf der echten Karte von Hamburg und Berlin. Vorregistrieren, dann meldet sich Google Play zum Start.</p>
+<div class="spiel-knoepfe">
+<a class="knopf knopf--spiel" href="https://play.google.com/store/apps/details?id=com.diyatostudios.kiezkrieg" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4l14 8-14 8z"/></svg>Android: Jetzt bei Google Play vorregistrieren</a>
+<a class="knopf knopf--hell" href="https://kiezkrieg.expo.app" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>iPhone &amp; PC: im Browser spielen</a>
+</div>
+<a class="start__mehr" href="spiele.html#kiezkrieg">Mehr zum Spiel</a>
+</div>
+</section>
+
+<section class="held held--klein">
 <img class="held__logo" src="bilder/diyato-logo.webp" alt="Diyato Studios" width="1144" height="492">
 <h1 class="titel">Spiele aus Hamburg.</h1>
 <p>Diyato Studios ist ein kleines Spielestudio. Hier findest du alle Spiele und den direkten Draht zum Studio.</p>
@@ -42,19 +56,20 @@
 <div class="karten">
 
 <article class="karte kiezkrieg">
-<div class="karte__bild"><img class="icon" src="bilder/kiezkrieg-icon.webp" alt="Kiezkrieg" width="600" height="600"></div>
+<div class="karte__bild"><img class="icon" src="bilder/kiezkrieg-icon.png" alt="Kiezkrieg" width="512" height="512"></div>
 <div class="karte__inhalt">
 <div class="marken">
+<span class="marke marke--start">Start: Fr 27.11.2026, 18 Uhr</span>
 <span class="marke">Ab 18</span>
-<span class="marke">Android</span>
-<span class="marke">Im Test</span>
+<span class="marke">Android &amp; Browser</span>
 </div>
 <h3 class="titel spielname">Kiezkrieg</h3>
 <p>Gründe eine Crew und erobere Viertel auf der echten Karte von Hamburg und Berlin.</p>
+<div class="spiel-knoepfe">
+<a class="knopf knopf--klein knopf--spiel" href="https://play.google.com/store/apps/details?id=com.diyatostudios.kiezkrieg" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4l14 8-14 8z"/></svg>Android: Jetzt bei Google Play vorregistrieren</a>
+<a class="knopf knopf--klein knopf--hell" href="https://kiezkrieg.expo.app" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>iPhone &amp; PC: im Browser spielen</a>
+</div>
 <div class="karte__aktionen">
-<span class="knopf knopf--klein knopf--spiel">
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4l14 8-14 8z"/></svg>
-Bald bei Google Play</span>
 <a href="spiele.html#kiezkrieg" class="karte__mehr">Mehr zum Spiel</a>
 </div>
 </div>
@@ -65,12 +80,14 @@ Bald bei Google Play</span>
 <div class="karte__inhalt">
 <div class="marken">
 <span class="marke">Ab 6 Jahren</span>
-<span class="marke">Bald verfügbar</span>
+<span class="marke">Android</span>
+<span class="marke">Geschlossener Test</span>
 </div>
 <h3 class="titel">Squishy World</h3>
 <p>Squishys sammeln, quetschen und dein eigenes Zuhause einrichten.</p>
 <div class="karte__aktionen">
-<a class="knopf knopf--klein knopf--dunkel" href="spiele.html#squishy-world">Mehr zum Spiel</a>
+<a class="knopf knopf--klein knopf--dunkel" href="spiele.html#squishy-tester">Tester werden</a>
+<a href="spiele.html#squishy-world" class="karte__mehr">Mehr zum Spiel</a>
 </div>
 </div>
 </article>

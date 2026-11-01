@@ -15,7 +15,7 @@ Statische Seite ohne Framework, gebaut am 11. Oktober 2026 aus dem abgesegneten 
 - `css/stil.css`: gemeinsames Aussehen aller Seiten
 - `js/formular.js`: zeigt im Feedback-Formular beim Senden nur „Das Formular ist bald verfügbar“ (es wird nichts verschickt)
 - `schriften/`: Figtree und Bricolage Grotesque lokal (SIL Open Font License, Lizenzen liegen daneben)
-- `bilder/`: Logo und Spiel-Icons als WebP, fürs Web verkleinert
+- `bilder/`: Logo und Squishy-Icon als WebP, fürs Web verkleinert; `kiezkrieg-icon.png` ist das neue App-Symbol (grünes K mit Krone, 512 px, Stand 30. Oktober 2026)
 - `.nojekyll`: damit GitHub Pages die Dateien unverändert ausliefert
 
 ## Grundsätze
@@ -27,3 +27,9 @@ Statische Seite ohne Framework, gebaut am 11. Oktober 2026 aus dem abgesegneten 
 ## Ansehen
 
 `index.html` im Explorer doppelklicken (die 404-Seite sieht man so ohne Aussehen, weil sie absolute Pfade nutzt). Oder im Ordner `npx serve .` und dann http://localhost:3000 öffnen.
+
+## Stand 1. November 2026
+
+- Startseite: oben zuerst der Kasten „Kiezkrieg startet Fr 27.11.2026, 18 Uhr“ mit den Knöpfen „Android: Jetzt bei Google Play vorregistrieren“ (Play-Store-Eintrag) und „iPhone & PC: im Browser spielen“ (kiezkrieg.expo.app); dieselben Knöpfe auf der Kiezkrieg-Karte und auf der Spiele-Seite.
+- Squishy World: Abschnitt „Tester werden“ auf der Spiele-Seite (1. Google-Gruppe beitreten, 2. Tester werden bei Google Play; Freischaltung bis zu einer Stunde, Google-Konto nötig).
+- Die Links führen auf fremde Seiten (Google Play, Google Groups, Expo); geladen wird von dort nichts, die Content-Security-Policy bleibt unverändert.
