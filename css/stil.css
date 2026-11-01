@@ -76,6 +76,8 @@ img { display: block; height: auto; max-width: 100%; }
 .tester__schritte li { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid #E3A6C8; }
 .tester__text { font-size: 17px; }
 .tester .knopf { align-self: flex-start; }
+.tester__hinweis { margin: 0; }
+.squishy .tester__hinweis { color: #15171C; }
 
 /* Startseite: großes Logo */
 .held { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 88px; }
@@ -93,9 +95,6 @@ img { display: block; height: auto; max-width: 100%; }
 .karte { display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; }
 .karte__bild { margin: 20px 20px 0; }
 .karte__bild img { width: 260px; aspect-ratio: 1 / 1; margin: 0 auto; }
-/* Kiezkrieg: Vorstellungsgrafik 1024 × 500, ganz sichtbar, nie abgeschnitten */
-.karte__bild--breit { margin: 0; }
-.karte__bild--breit .grafik { width: 100%; aspect-ratio: 1024 / 500; object-fit: contain; border-radius: 0; }
 .karte__inhalt { display: flex; flex-direction: column; gap: 14px; padding: 28px 32px 32px; }
 .karte h3 { margin: 0; font-size: 44px; line-height: 1; }
 .karte p { margin: 0; }
@@ -110,7 +109,7 @@ img { display: block; height: auto; max-width: 100%; }
 .kiezkrieg .spielname { color: #6BFF5C; }
 .kiezkrieg p { color: #C9D0DD; }
 .kiezkrieg a { color: #F2F4F8; }
-.kiezkrieg .icon { border-radius: 22%; }
+.kiezkrieg .icon { border-radius: 28px; }
 .kiezkrieg .knopf--spiel { background: #6BFF5C; color: #06110A; }
 .kiezkrieg .knopf--spiel:hover { color: #06110A; background: #86FF79; }
 .kiezkrieg .knopf--hell { border: 1px solid #6BFF5C; color: #F2F4F8; }
@@ -151,7 +150,7 @@ img { display: block; height: auto; max-width: 100%; }
 .spiel { display: flex; flex-wrap: wrap; border-radius: 24px; overflow: hidden; }
 .spiel__bild { flex: 1 1 340px; min-width: 0; padding: 20px; }
 .spiel__bild img { width: 300px; aspect-ratio: 1 / 1; margin: 0 auto; }
-.squishy .spiel__bild img { border-radius: 32px; }
+.spiel__bild img { border-radius: 32px; }
 .spiel__inhalt { flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 36px 40px 36px 20px; }
 .spiel h2 { margin: 0; font-size: 52px; line-height: 1; }
 .spiel p { margin: 0; }
