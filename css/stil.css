@@ -115,6 +115,7 @@ img { display: block; height: auto; max-width: 100%; }
 .kiezkrieg .knopf--hell { border: 1px solid #6BFF5C; color: #F2F4F8; }
 .kiezkrieg .knopf--hell:hover { color: #06110A; background: #6BFF5C; }
 .kiezkrieg .marke--start { border-color: #6BFF5C; color: #6BFF5C; }
+.kiezkrieg .dank { padding: 14px 18px; border: 1px solid #F2C14E; border-radius: 16px; background: #1A1708; color: #F2C14E; font-weight: 600; }
 .kiezkrieg .spiel-links { border-top-color: #222838; }
 .kiezkrieg .spiel-links a { color: #C9D0DD; }
 .kiezkrieg .spiel-links a:hover { color: #F2F4F8; }
